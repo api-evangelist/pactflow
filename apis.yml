@@ -1,24 +1,137 @@
 aid: pactflow
+
 name: PactFlow
-description: 'PactFlow is a company surfaced via the API Evangelist harvest backlog (source: new-submission)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: PactFlow provides a comprehensive contract testing platform that enables developers and QA teams to create, verify, and maintain
+  consumer-driven contracts for APIs and microservices. Built on the Pact framework and backed by SmartBear, PactFlow offers hosted Pact Broker
+  services, CI/CD integrations, detailed reporting, and enterprise features such as role‑based access, audit logs, and compliance support. It
+  helps organizations ensure reliable API interactions, reduce integration bugs, and accelerate delivery pipelines.
+
 url: https://raw.githubusercontent.com/api-evangelist/pactflow/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:new-submission
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-03 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-03'
+
 modified: '2026-10-03'
+
 tags:
 - Company
-apis: []
+- API Testing
+- Contract Testing
+- Microservices
+- CI/CD
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://pactflow.io/assets/img/pactflow/pactflow-og.png
+
 common:
+- type: Plans
+  url: plans/pactflow-plans-pricing.yml
+- type: Spectral
+  url: rules/pactflow-rules.yml
+- type: JSONLD
+  url: json-ld/pactflow-context.jsonld
+- type: Vocabulary
+  url: vocabulary/pactflow-vocabulary.yml
+- type: Webhooks
+  url: asyncapi/pactflow-webhooks.yml
+- type: DataModel
+  url: data-model/pactflow-data-model.yml
+- type: ChangeLog
+  url: changelog/pactflow-changelog.yml
+- type: Compliance
+  url: https://pactflow.io/security/
+- type: Conformance
+  url: conformance/pactflow-conformance.yml
+- type: SecurityTxt
+  url: well-known/pactflow-status-security.txt
+- type: WellKnown
+  url: well-known/pactflow-well-known.yml
+- type: Hosts
+  url: hosts/pactflow-hosts.yml
+- type: Vendors
+  url: vendors/pactflow-vendors.yml
+- type: SDKs
+  url: packages/pactflow-packages.yml
+- type: Packages
+  url: packages/pactflow-packages.yml
+- type: Webhooks
+  url: https://pactflow.io/blog/webhooks/
+- type: TermsOfService
+  url: https://pactflow.io/terms
+- type: StatusPage
+  url: http://status.pactflow.io/
+- type: Security
+  url: https://pactflow.io/security
+- type: Roadmap
+  url: https://github.com/pactflow/roadmap/
+- type: PrivacyPolicy
+  url: https://pactflow.io/privacy
+- type: TrustCenter
+  url: security/pactflow-trust-center.yml
+- type: DomainSecurity
+  url: security/pactflow-domain-security.yml
 - type: Website
   url: https://pactflow.io/
+- type: Documentation
+  url: https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/getting-started-with.html
+- type: Blog
+  url: https://pactflow.io/blog
+- type: Pricing
+  url: https://pactflow.io/pricing
+- type: SignUp
+  url: https://pactflow.io/demo
+
+apis:
+- aid: pactflow:pactflow-api
+  name: PactFlow API
+  description: 'PactFlow API as documented publicly: 11 operations. Contract generated from the documentation by API Evangelist (2026-10-03);
+    not the provider''s own document.'
+  humanURL: https://support.smartbear.com/swagger/contract-testing/docs/en/drift/how-to-guides/async-api/using-triggers-and-probes.html
+  baseURL: https://download.pactflow.io
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/pactflow-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/pactflow-get-product-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-products-request-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-get-products-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-get-products-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-products-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-test-setup-operationid-response-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI, AsyncAPI, GraphQL, gRPC, or WSDL files were found on pactflow.io or its subdomains.
+  evidence:
+  - url: https://pactflow.io/openapi.json
+    status: 404
+  checked: '2026-10-03'
+
 x-submission-notes: Contract-testing platform (SmartBear). Influence-tier profile request 66c1801d.
+x-enrichment:
+  date: '2026-10-03'
+  status: enriched
+  artifacts_added: 23
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

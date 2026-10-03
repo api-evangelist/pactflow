@@ -1,0 +1,26 @@
+generated: '2026-10-03'
+method: derived
+generator: derive-data-model.py
+source:
+- openapi/_ae-authored/pactflow-openapi-generated.yml
+notation: has_one = property $ref; has_many = array of $ref; belongs_to = <entity>_id field
+summary:
+  entities: 7
+  entities_in_spec: 7
+  relationships: 0
+entities:
+- name: GetProductIdResponse
+  fields: 4
+- name: GetProductsIdResponse
+  fields: 5
+- name: GetProductsResponse
+  fields: 5
+- name: PostProductsRequest
+  fields: 5
+- name: PostProductsResponse
+  fields: 5
+- name: PostTestResetResponse
+  fields: 1
+- name: PostTestSetupOperationidResponse
+  fields: 1
+relationships: []

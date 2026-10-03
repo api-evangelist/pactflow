@@ -1,0 +1,51 @@
+generated: '2026-10-03'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://pactflow.io/pricing/
+sources:
+- https://pactflow.io/pricing/
+name: PactFlow pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: Starter
+  price_text: FREE
+  description: Discover how PactFlow can help you. Spin up a contract testing proof of concept or roll out in a small team.
+  features:
+  - Unlimited users
+  - 2 integrations
+  - Bi-Directional Contract Testing
+- name: Team (Yearly)
+  price_text: $115.42 USD per month (billed yearly as $1,385)
+  description: Upgrade to 50 integrations and expand contract testing across your entire team.
+  features:
+  - 10 Users
+  - 25 Users
+  - 50 integrations
+  - Community support
+  - Bi-Directional Contract Testing
+  - GitHub and Google Login
+- name: Team (Monthly)
+  price_text: $127 USD per month
+  price: 127
+  description: Upgrade to 50 integrations and expand contract testing across your entire team.
+  features:
+  - 10 Users
+  - 25 Users
+  - 50 integrations
+  - Community support
+  - Bi-Directional Contract Testing
+  - GitHub and Google Login
+- name: Enterprise
+  price_text: Contact Sales
+  description: Scale across multiple teams or your entire organization. Includes Team plan features and unlocks advanced user and security management
+    plus dedicated support.
+  features:
+  - SAML SSO support
+  - Role-based access management
+  - Access to contract testing experts and support
+  - SaaS or on-premise deployment
+  limits:
+  - name: pricing_basis
+    limit_text: negotiated
+docs: https://pactflow.io/pricing/

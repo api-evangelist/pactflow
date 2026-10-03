@@ -1,0 +1,351 @@
+openapi: 3.1.0
+info:
+  title: PactFlow API
+  version: '2026-10-03'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-03: 11 operation(s) read from 16 public documentation page(s) (each
+    operation names its page in x-source). This is not the provider''s published contract; PactFlow has published no machine-readable contract
+    that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 6
+    documentation: 5
+    pages-with-code: 8
+    pages-read: 16
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-03'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/drift/how-to-guides/async-api/using-triggers-and-probes.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/drift/how-to-guides/async-api/testing-asynchronous-interactions.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/swagger-contract-testing-university/bi-directional-contract-testing/workshop/2--create-and-document-an-api-using-openapi.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/drift/tutorials/managing-state.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/features/ai/quick-start.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/drift/tutorials/embedding-drift-in-your-test-framework.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/swagger-contract-testing-university/bi-directional-contract-testing/quick-start-guide-with-github-actions.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/swagger-contract-testing-university/design-first-with-swagger-studio/quick-start-guide-with-github-actions.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/contract-testing/bi-directional-contract-testing/supported-contracts/openapi-specification/features---testing.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/drift/how-to-guides/installation-guide.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/features/ai/using-ai.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/features/ai/ai-skills.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/features/stubs.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/contract-testing/bi-directional-contract-testing/publishing-contracts.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/contract-testing/bi-directional-contract-testing/compatibility-checks.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/integrations/swagger-studio-integration.html
+servers:
+- url: https://download.pactflow.io
+paths:
+  /ai/get.sh:
+    get:
+      operationId: get_ai_get_sh
+      tags:
+      - Ai
+      summary: GET /ai/get.sh
+      x-source: https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/features/ai/quick-start.html
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: 'curl https://download.pactflow.io/ai/get.sh | sh For Windows PowerShell users, use the following command to download and install:
+          Invoke-WebRequest -Uri https://download.pactflow.io/ai/get.ps1 | Invoke-Expression Installation Options You can customize the installation
+          using the options below. For a full list, see the  --help / -h  command curl https://download.pactflow.io/ai/get.sh | sh -s -- -h -'
+  /drift/latest/{latestid}:
+    get:
+      operationId: get_drift_latest_latestid
+      tags:
+      - Drift
+      summary: GET /drift/latest/linux-x86_64.tgz
+      x-source: https://support.smartbear.com/swagger/contract-testing/docs/en/drift/how-to-guides/installation-guide.html
+      parameters:
+      - name: latestid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: 'curl https://download.pactflow.io/drift/latest/linux-x86_64.tgz | tar xz
+
+          ./drift --help macOS (Apple Silicon) curl https://download.pactflow.io/drift/latest/macos-aarch64.tgz | tar xz
+
+          ./drift --help Windows (PowerShell) curl.exe -o drift.tgz https://download.pactflow.io/drift/latest/windows-x86_64.tgz
+
+          tar xz -f drift.tgz
+
+          .\drift.exe --help Pinning to a Specific Version To install a specific versio'
+        collapsed_from: 3 example path(s) differing only at latestId
+  /orders:
+    get:
+      operationId: get_orders
+      tags:
+      - Orders
+      summary: GET /orders
+      x-source: https://support.smartbear.com/swagger/contract-testing/docs/en/drift/how-to-guides/async-api/using-triggers-and-probes.html
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl\n parameters:\n args:\n - \"-X\"\n - \"POST\"\n - \"http://localhost:8080/orders\"\n - \"-H\"\n - \"content-type: application/json\"\
+          \n - \"-H\"\n - \"x-correlation-id: ${parameters.correlation-id}\"\n - \"-d\"\n - '{\"customerId\":\"CUST-9\"}'\n timeout-ms: 3000 The\
+          \ trigger must propagate the correlation ID. Drift filters captured messages by correlation ID. If the message your service publishes\
+          \ carries a different one, Dri"
+  /pact-foundation/pact-ruby-standalone/releases/download/v1.89.00/{v18900id}:
+    get:
+      operationId: get_pact_foundation_pact_ruby_standalone_releases_download_v1_89_00_v18900id
+      tags:
+      - Pact Foundation
+      summary: Publishing Contracts
+      x-source: https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/contract-testing/bi-directional-contract-testing/publishing-contracts.html
+      parameters:
+      - name: v18900id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 3 example path(s) differing only at v18900Id
+  /pacts/provider/ProviderApp/consumer/ConsumerApp/latest/stub/products:
+    get:
+      operationId: get_pacts_provider_ProviderApp_consumer_ConsumerApp_latest_stub_products
+      tags:
+      - Pacts
+      summary: GET /pacts/provider/ProviderApp/consumer/ConsumerApp/latest/stub/products
+      x-source: https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/features/stubs.html
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl \n -H\"authorization: Bearer <PactFlow token>\"  -H\"pactflow-stub-authorization-header: x-authorization\"  -H\"x-authorization:\
+          \ Bearer XYZ\"  https://example.pactflow.io/pacts/provider/ProviderApp/consumer/ConsumerApp/latest/stub/products Refer to the Configuration\
+          \  section for more. Limitations 1. Plugins Interactions that use plugins are not supported. 2. Headers containing underscores When\
+          \ calli"
+  /product/{id}:
+    get:
+      operationId: get_product_id
+      tags:
+      - Product
+      summary: GET /product/{id} incompatibility error details
+      x-source: https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/integrations/swagger-studio-integration.html
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetProductIdResponse'
+      x-evidence:
+        kind: documentation
+  /products:
+    get:
+      operationId: get_products
+      tags:
+      - Products
+      summary: List all products
+      x-source: https://support.smartbear.com/swagger/contract-testing/docs/en/swagger-contract-testing-university/bi-directional-contract-testing/workshop/2--create-and-document-an-api-using-openapi.html
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetProductsResponse'
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_products
+      tags:
+      - Products
+      summary: Create a product
+      x-source: https://support.smartbear.com/swagger/contract-testing/docs/en/swagger-contract-testing-university/bi-directional-contract-testing/workshop/2--create-and-document-an-api-using-openapi.html
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostProductsRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostProductsResponse'
+      x-evidence:
+        kind: documentation
+  /products/{id}:
+    get:
+      operationId: get_products_id
+      tags:
+      - Products
+      summary: Quick Start Guide with GitHub Actions
+      x-source: https://support.smartbear.com/swagger/contract-testing/docs/en/swagger-contract-testing-university/bi-directional-contract-testing/quick-start-guide-with-github-actions.html
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetProductsIdResponse'
+      x-evidence:
+        kind: documentation
+  /test/reset:
+    post:
+      operationId: post_test_reset
+      tags:
+      - Test
+      summary: Managing State
+      x-source: https://support.smartbear.com/swagger/contract-testing/docs/en/drift/tutorials/managing-state.html
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostTestResetResponse'
+      x-evidence:
+        kind: documentation
+  /test/setup/{operationid}:
+    post:
+      operationId: post_test_setup_operationid
+      tags:
+      - Test
+      summary: Managing State
+      x-source: https://support.smartbear.com/swagger/contract-testing/docs/en/drift/tutorials/managing-state.html
+      parameters:
+      - name: operationid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostTestSetupOperationidResponse'
+      x-evidence:
+        kind: documentation
+components:
+  schemas:
+    GetProductIdResponse:
+      type: object
+      properties:
+        error_message:
+          type: string
+          description: Response body is incompatible with the response body schema in the spec file
+        api_location:
+          type: string
+          description: Location in the API spec where the error was found
+        consumer_contract_value:
+          type: string
+          description: The value from the consumer contract that caused the incompatibility
+        consumer_contract_location:
+          type: string
+          description: Location in the consumer contract where the value was found
+    GetProductsResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        type:
+          type: string
+        name:
+          type: string
+        version:
+          type: string
+        price:
+          type: number
+    PostProductsRequest:
+      type: object
+      properties:
+        id:
+          type: string
+        type:
+          type: string
+        name:
+          type: string
+        version:
+          type: string
+        price:
+          type: number
+      required:
+      - id
+      - type
+      - name
+      - version
+      - price
+    PostProductsResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        type:
+          type: string
+        name:
+          type: string
+        version:
+          type: string
+        price:
+          type: number
+    GetProductsIdResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        type:
+          type: string
+        name:
+          type: string
+        version:
+          type: string
+        price:
+          type: number
+    PostTestResetResponse:
+      type: object
+      properties:
+        message:
+          type: string
+          description: State reset
+    PostTestSetupOperationidResponse:
+      type: object
+      properties:
+        message:
+          type: string
+          description: State ready for {operationId}
+tags:
+- name: Ai
+- name: Drift
+- name: Orders
+- name: Pact Foundation
+- name: Pacts
+- name: Product
+- name: Products
+- name: Test

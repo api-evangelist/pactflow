@@ -1,0 +1,21 @@
+generated: '2026-10-03'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/user-interface/user-interface-1-x-x--on-premises-/settings/webhooks.html
+sources:
+- https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/user-interface/user-interface-1-x-x--on-premises-/settings/webhooks.html
+- https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/user-interface/user-interface-2-x-x/settings/webhooks.html
+- https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/troubleshooting/webhooks---public-ips.html
+- https://support.smartbear.com/swagger/contract-testing/docs/en/swagger-contract-testing-university/consumer-driven-contract-testing-ci-cd/set-up-ci/configure-webhook.html
+description: PactFlow (Swagger Contract Testing) provides webhooks that fire on specific contract events.
+events:
+- event: Contract published that requires verification
+  description: Fires once for each provider version missing a verification result for a newly published pact, including the latest main‑branch
+    version and any versions deployed to an environment.
+- event: Contract published with changed content or tags
+  description: Fires when a newly published pact has different content from the previous version, either without tags or when tags are applied
+    to the consumer version.
+delivery:
+  auth: Optional Basic HTTP authentication (username and password fields) and optional custom headers; secrets can be referenced via the Secrets
+    feature.
+docs: https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/user-interface/user-interface-1-x-x--on-premises-/settings/webhooks.html

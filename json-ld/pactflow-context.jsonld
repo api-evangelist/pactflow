@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "@vocab": "https://pactflow.io/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "pactflow": "https://pactflow.io/schema#",
+    "GetProductIdResponse": "pactflow:GetProductIdResponse",
+    "error_message": {
+      "@id": "pactflow:error_message",
+      "@type": "xsd:string"
+    },
+    "api_location": {
+      "@id": "pactflow:api_location",
+      "@type": "xsd:string"
+    },
+    "consumer_contract_value": {
+      "@id": "pactflow:consumer_contract_value",
+      "@type": "xsd:string"
+    },
+    "consumer_contract_location": {
+      "@id": "pactflow:consumer_contract_location",
+      "@type": "xsd:string"
+    },
+    "GetProductsResponse": "pactflow:GetProductsResponse",
+    "id": {
+      "@id": "pactflow:id",
+      "@type": "xsd:string"
+    },
+    "type": {
+      "@id": "pactflow:type",
+      "@type": "xsd:string"
+    },
+    "name": {
+      "@id": "pactflow:name",
+      "@type": "xsd:string"
+    },
+    "version": {
+      "@id": "pactflow:version",
+      "@type": "xsd:string"
+    },
+    "price": {
+      "@id": "pactflow:price",
+      "@type": "xsd:decimal"
+    },
+    "PostProductsRequest": "pactflow:PostProductsRequest",
+    "PostProductsResponse": "pactflow:PostProductsResponse",
+    "GetProductsIdResponse": "pactflow:GetProductsIdResponse",
+    "PostTestResetResponse": "pactflow:PostTestResetResponse",
+    "message": {
+      "@id": "pactflow:message",
+      "@type": "xsd:string"
+    },
+    "PostTestSetupOperationidResponse": "pactflow:PostTestSetupOperationidResponse"
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "PactFlow API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects PactFlow's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-03) from openapi/_ae-authored/pactflow-openapi-generated.yml.",
+  "dcterms:created": "2026-10-03",
+  "dcterms:source": [
+    "openapi/_ae-authored/pactflow-openapi-generated.yml"
+  ]
+}

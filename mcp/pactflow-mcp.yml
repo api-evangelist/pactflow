@@ -1,0 +1,70 @@
+generated: '2026-10-03'
+method: derived
+generator: derive-mcp-candidate.py
+source:
+- openapi/_ae-authored/pactflow-openapi-generated.yml
+status: candidate
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+note: 'No MCP server was found. The pre-flight posted tools/list to /mcp on api.pactflow.io, api.smartbear.com, support.smartbear.com, pactflow.io;
+  verdict opaque (https://developer.pactflow.io/mcp answered 401: the edge authenticates before it routes, which proves nothing either way). Candidate
+  tools below are derived from the 11 operation(s) in the provider''s own OpenAPI (11 listed); they describe what a server WOULD expose, not one
+  that exists.'
+tools:
+- name: get_ai_get_sh
+  operationId: get_ai_get_sh
+  method: GET
+  path: /ai/get.sh
+  description: GET /ai/get.sh
+- name: get_drift_latest_latestid
+  operationId: get_drift_latest_latestid
+  method: GET
+  path: /drift/latest/{latestid}
+  description: GET /drift/latest/linux-x86_64.tgz
+- name: get_orders
+  operationId: get_orders
+  method: GET
+  path: /orders
+  description: GET /orders
+- name: get_pact_foundation_pact_ruby_standalone_releases_download_v
+  operationId: get_pact_foundation_pact_ruby_standalone_releases_download_v1_89_00_v18900id
+  method: GET
+  path: /pact-foundation/pact-ruby-standalone/releases/download/v1.89.00/{v18900id}
+  description: Publishing Contracts
+- name: get_pacts_provider_provider_app_consumer_consumer_app_latest
+  operationId: get_pacts_provider_ProviderApp_consumer_ConsumerApp_latest_stub_products
+  method: GET
+  path: /pacts/provider/ProviderApp/consumer/ConsumerApp/latest/stub/products
+  description: GET /pacts/provider/ProviderApp/consumer/ConsumerApp/latest/stub/products
+- name: get_product_id
+  operationId: get_product_id
+  method: GET
+  path: /product/{id}
+  description: GET /product/{id} incompatibility error details
+- name: get_products
+  operationId: get_products
+  method: GET
+  path: /products
+  description: List all products
+- name: post_products
+  operationId: post_products
+  method: POST
+  path: /products
+  description: Create a product
+- name: get_products_id
+  operationId: get_products_id
+  method: GET
+  path: /products/{id}
+  description: Quick Start Guide with GitHub Actions
+- name: post_test_reset
+  operationId: post_test_reset
+  method: POST
+  path: /test/reset
+  description: Managing State
+- name: post_test_setup_operationid
+  operationId: post_test_setup_operationid
+  method: POST
+  path: /test/setup/{operationid}
+  description: Managing State

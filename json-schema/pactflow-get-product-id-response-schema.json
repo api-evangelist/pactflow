@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/pactflow/main/json-schema/pactflow-get-product-id-response-schema.json",
+  "title": "GetProductIdResponse",
+  "x-generated": "2026-10-03",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/pactflow-openapi-generated.yml#/components/schemas/GetProductIdResponse",
+  "type": "object",
+  "properties": {
+    "error_message": {
+      "type": "string",
+      "description": "Response body is incompatible with the response body schema in the spec file"
+    },
+    "api_location": {
+      "type": "string",
+      "description": "Location in the API spec where the error was found"
+    },
+    "consumer_contract_value": {
+      "type": "string",
+      "description": "The value from the consumer contract that caused the incompatibility"
+    },
+    "consumer_contract_location": {
+      "type": "string",
+      "description": "Location in the consumer contract where the value was found"
+    }
+  }
+}

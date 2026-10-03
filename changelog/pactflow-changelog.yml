@@ -1,0 +1,33 @@
+generated: '2026-10-03'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/contract-testing/bi-directional-contract-testing/supported-contracts/openapi-specification/changelog.html
+sources:
+- https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/contract-testing/bi-directional-contract-testing/supported-contracts/openapi-specification/changelog.html
+- https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/troubleshooting/powershell-migration-guide.html
+- https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/migration-from-pactflow-to-swagger-contract-testing.html
+- https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/migration-from-pactflow-to-swagger-contract-testing/migration-faq.html
+entries:
+- breaking: false
+  highlights:
+  - A new  comparison engine released, up to 100x faster than the  previous engine .
+  - Configurable behavior support added.
+  date: '2025-04-01'
+- breaking: false
+  highlights:
+  - Warning If you are here because tests that were previously passing are now failing, it is likely that your use of the discrimination keyword
+    is incompatible with our latest update.
+  - Support for OAS 3.1 As per JSON Schema guidance , numbers are not coerced into narrow types such as int64 , int32 and float , with support
+    only for number and integer .
+  - nullable now requires use of type , see https://github.com/ajv-validator/ajv/blob/490eb8c0eba8392d071fef005e16d330f259d0ba/lib/compile/validate/dataType.ts#L26C66-L26C66
+    .
+  - Transformations to OAS document applied to improve use of anyOf , oneOf , allOf and polymorphic payloads.
+  date: '2023-07-01'
+- breaking: false
+  highlights:
+  - Support for V4 Pacts added
+  - 'Added full RFC 9110: HTTP Semantics §12 support for content-types, content-negotiation and vendor specific media types'
+  - Support for negative scenario testing
+  date: '2023-06-01'
+note: Versioning scheme and current version are not specified on the page.
+docs: https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/contract-testing/bi-directional-contract-testing/supported-contracts/openapi-specification/changelog.html
