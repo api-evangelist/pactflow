@@ -96,16 +96,17 @@ common:
   url: https://pactflow.io/demo
 
 apis:
-- aid: pactflow:pactflow-api
-  name: PactFlow API
-  description: 'PactFlow API as documented publicly: 11 operations. Contract generated from the documentation by API Evangelist (2026-10-03);
-    not the provider''s own document.'
-  humanURL: https://support.smartbear.com/swagger/contract-testing/docs/en/drift/how-to-guides/async-api/using-triggers-and-probes.html
+- aid: pactflow:pactflow-ai-api
+  name: PactFlow AI API
+  description: The Ai API from PactFlow — 1 operation(s) for ai.
+  humanURL: >-
+    https://support.smartbear.com/swagger/contract-testing/docs/en/drift/how-to-guides/async-api/using-triggers-and-probes.html
   baseURL: https://download.pactflow.io
+  tags:
+  - Ai
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/pactflow-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/pactflow-ai-api-openapi.yml
   - type: JSONSchema
     url: json-schema/pactflow-get-product-id-response-schema.json
   - type: JSONSchema
@@ -118,7 +119,167 @@ apis:
     url: json-schema/pactflow-post-products-response-schema.json
   - type: JSONSchema
     url: json-schema/pactflow-post-test-setup-operationid-response-schema.json
-
+- aid: pactflow:pactflow-drift-api
+  name: PactFlow Drift API
+  description: The Drift API from PactFlow — 1 operation(s) for drift.
+  humanURL: >-
+    https://support.smartbear.com/swagger/contract-testing/docs/en/drift/how-to-guides/async-api/using-triggers-and-probes.html
+  baseURL: https://download.pactflow.io
+  tags:
+  - Drift
+  properties:
+  - type: OpenAPI
+    url: openapi/pactflow-drift-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/pactflow-get-product-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-products-request-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-get-products-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-get-products-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-products-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-test-setup-operationid-response-schema.json
+- aid: pactflow:pactflow-orders-api
+  name: PactFlow Orders API
+  description: The Orders API from PactFlow — 1 operation(s) for orders.
+  humanURL: >-
+    https://support.smartbear.com/swagger/contract-testing/docs/en/drift/how-to-guides/async-api/using-triggers-and-probes.html
+  baseURL: https://download.pactflow.io
+  tags:
+  - Orders
+  properties:
+  - type: OpenAPI
+    url: openapi/pactflow-orders-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/pactflow-get-product-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-products-request-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-get-products-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-get-products-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-products-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-test-setup-operationid-response-schema.json
+- aid: pactflow:pactflow-pact-foundation-api
+  name: PactFlow Pact Foundation API
+  description: The Pact Foundation API from PactFlow — 1 operation(s) for pact foundation.
+  humanURL: >-
+    https://support.smartbear.com/swagger/contract-testing/docs/en/drift/how-to-guides/async-api/using-triggers-and-probes.html
+  baseURL: https://download.pactflow.io
+  tags:
+  - Pact Foundation
+  properties:
+  - type: OpenAPI
+    url: openapi/pactflow-pact-foundation-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/pactflow-get-product-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-products-request-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-get-products-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-get-products-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-products-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-test-setup-operationid-response-schema.json
+- aid: pactflow:pactflow-pacts-api
+  name: PactFlow Pacts API
+  description: The Pacts API from PactFlow — 1 operation(s) for pacts.
+  humanURL: >-
+    https://support.smartbear.com/swagger/contract-testing/docs/en/drift/how-to-guides/async-api/using-triggers-and-probes.html
+  baseURL: https://download.pactflow.io
+  tags:
+  - Pacts
+  properties:
+  - type: OpenAPI
+    url: openapi/pactflow-pacts-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/pactflow-get-product-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-products-request-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-get-products-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-get-products-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-products-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-test-setup-operationid-response-schema.json
+- aid: pactflow:pactflow-product-api
+  name: PactFlow Product API
+  description: The Product API from PactFlow — 1 operation(s) for product.
+  humanURL: >-
+    https://support.smartbear.com/swagger/contract-testing/docs/en/drift/how-to-guides/async-api/using-triggers-and-probes.html
+  baseURL: https://download.pactflow.io
+  tags:
+  - Product
+  properties:
+  - type: OpenAPI
+    url: openapi/pactflow-product-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/pactflow-get-product-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-products-request-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-get-products-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-get-products-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-products-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-test-setup-operationid-response-schema.json
+- aid: pactflow:pactflow-products-api
+  name: PactFlow Products API
+  description: The Products API from PactFlow — 2 operation(s) for products.
+  humanURL: >-
+    https://support.smartbear.com/swagger/contract-testing/docs/en/drift/how-to-guides/async-api/using-triggers-and-probes.html
+  baseURL: https://download.pactflow.io
+  tags:
+  - Products
+  properties:
+  - type: OpenAPI
+    url: openapi/pactflow-products-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/pactflow-get-product-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-products-request-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-get-products-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-get-products-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-products-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-test-setup-operationid-response-schema.json
+- aid: pactflow:pactflow-test-api
+  name: PactFlow Test API
+  description: The Test API from PactFlow — 2 operation(s) for test.
+  humanURL: >-
+    https://support.smartbear.com/swagger/contract-testing/docs/en/drift/how-to-guides/async-api/using-triggers-and-probes.html
+  baseURL: https://download.pactflow.io
+  tags:
+  - Test
+  properties:
+  - type: OpenAPI
+    url: openapi/pactflow-test-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/pactflow-get-product-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-products-request-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-get-products-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-get-products-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-products-response-schema.json
+  - type: JSONSchema
+    url: json-schema/pactflow-post-test-setup-operationid-response-schema.json
 x-coverage:
   state: unreadable
   reason: no-machine-readable-spec

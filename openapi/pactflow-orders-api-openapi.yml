@@ -1,0 +1,52 @@
+openapi: 3.2.0
+info:
+  title: PactFlow Orders API
+  version: '2026-10-03'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-03: 11 operation(s) read from 16 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; PactFlow has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 6
+    documentation: 5
+    pages-with-code: 8
+    pages-read: 16
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-03'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/drift/how-to-guides/async-api/using-triggers-and-probes.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/drift/how-to-guides/async-api/testing-asynchronous-interactions.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/swagger-contract-testing-university/bi-directional-contract-testing/workshop/2--create-and-document-an-api-using-openapi.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/drift/tutorials/managing-state.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/features/ai/quick-start.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/drift/tutorials/embedding-drift-in-your-test-framework.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/swagger-contract-testing-university/bi-directional-contract-testing/quick-start-guide-with-github-actions.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/swagger-contract-testing-university/design-first-with-swagger-studio/quick-start-guide-with-github-actions.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/contract-testing/bi-directional-contract-testing/supported-contracts/openapi-specification/features---testing.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/drift/how-to-guides/installation-guide.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/features/ai/using-ai.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/features/ai/ai-skills.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/features/stubs.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/contract-testing/bi-directional-contract-testing/publishing-contracts.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/contract-testing/bi-directional-contract-testing/compatibility-checks.html
+  - https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/integrations/swagger-studio-integration.html
+servers:
+- url: https://download.pactflow.io
+tags:
+- name: Orders
+paths:
+  /orders:
+    get:
+      operationId: get_orders
+      tags:
+      - Orders
+      summary: GET /orders
+      x-source: https://support.smartbear.com/swagger/contract-testing/docs/en/drift/how-to-guides/async-api/using-triggers-and-probes.html
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl\n parameters:\n args:\n - \"-X\"\n - \"POST\"\n - \"http://localhost:8080/orders\"\n - \"-H\"\n - \"content-type: application/json\"\n - \"-H\"\n - \"x-correlation-id: ${parameters.correlation-id}\"\n - \"-d\"\n - '{\"customerId\":\"CUST-9\"}'\n timeout-ms: 3000 The trigger must propagate the correlation ID. Drift filters captured messages by correlation ID. If the message your service publishes carries a different one, Dri"

@@ -1,0 +1,25 @@
+{
+  "provider": "pactflow",
+  "sources": [
+    "_ae-authored/pactflow-openapi-generated.yml"
+  ],
+  "outputs": [
+    "pactflow-ai-api-openapi.yml",
+    "pactflow-drift-api-openapi.yml",
+    "pactflow-orders-api-openapi.yml",
+    "pactflow-pact-foundation-api-openapi.yml",
+    "pactflow-pacts-api-openapi.yml",
+    "pactflow-product-api-openapi.yml",
+    "pactflow-products-api-openapi.yml",
+    "pactflow-test-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "pactflow-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: written (+8 apis, 8 total)"
+  ],
+  "skipped": []
+}
