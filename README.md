@@ -64,5 +64,137 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-PactFlow is a company surfaced via the API Evangelist harvest backlog (source: new-submission) and added to the network as a stub for full-pipeline profiling.
-- https://pactflow.io/
+PactFlow provides a comprehensive contract testing platform that enables developers and QA teams to create, verify, and maintain consumer-driven contracts for APIs and microservices. Built on the Pact framework and backed by SmartBear, PactFlow offers hosted Pact Broker services, CI/CD integrations, detailed reporting, and enterprise features such as role‑based access, audit logs, and compliance support. It helps organizations ensure reliable API interactions, reduce integration bugs, and accelerate delivery pipelines.
+
+**Areas:** Company · API Testing · Contract Testing · Microservices · CI/CD
+
+## PactFlow on APIs.io
+
+Everything profiled for PactFlow is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/pactflow/](https://apis.io/providers/pactflow/)** — or go straight to one of the APIs or properties below.
+
+### APIs (8)
+
+- [PactFlow AI API](https://apis.io/apis/pactflow/pactflow-ai-api/) — The Ai API from PactFlow — 1 operation(s) for ai.
+- [PactFlow Drift API](https://apis.io/apis/pactflow/pactflow-drift-api/) — The Drift API from PactFlow — 1 operation(s) for drift.
+- [PactFlow Orders API](https://apis.io/apis/pactflow/pactflow-orders-api/) — The Orders API from PactFlow — 1 operation(s) for orders.
+- [PactFlow Pact Foundation API](https://apis.io/apis/pactflow/pactflow-pact-foundation-api/) — The Pact Foundation API from PactFlow — 1 operation(s) for pact foundation.
+- [PactFlow Pacts API](https://apis.io/apis/pactflow/pactflow-pacts-api/) — The Pacts API from PactFlow — 1 operation(s) for pacts.
+- [PactFlow Product API](https://apis.io/apis/pactflow/pactflow-product-api/) — The Product API from PactFlow — 1 operation(s) for product.
+- [PactFlow Products API](https://apis.io/apis/pactflow/pactflow-products-api/) — The Products API from PactFlow — 2 operation(s) for products.
+- [PactFlow Test API](https://apis.io/apis/pactflow/pactflow-test-api/) — The Test API from PactFlow — 2 operation(s) for test.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Pactflow Webhooks](https://apis.io/asyncapis/pactflow/pactflow-webhooks/)
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [GetProductIdResponse](https://apis.io/schemas/pactflow/pactflow-get-product-id-response/)
+- [GetProductsIdResponse](https://apis.io/schemas/pactflow/pactflow-get-products-id-response/)
+- [GetProductsResponse](https://apis.io/schemas/pactflow/pactflow-get-products-response/)
+- [PostProductsRequest](https://apis.io/schemas/pactflow/pactflow-post-products-request/)
+- [PostProductsResponse](https://apis.io/schemas/pactflow/pactflow-post-products-response/)
+- [PostTestSetupOperationidResponse](https://apis.io/schemas/pactflow/pactflow-post-test-setup-operationid-response/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Pactflow Context](https://apis.io/jsonld/pactflow/pactflow-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [PactFlow API Rules](https://apis.io/rules/pactflow/pactflow-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Pactflow Domain Security](https://apis.io/security/pactflow/pactflow-domain-security/)
+- [Pactflow Trust Center](https://apis.io/security/pactflow/pactflow-trust-center/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Pactflow Plans Pricing](https://apis.io/plans/pactflow/pactflow-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://pactflow.io/)
+- [Documentation](https://support.smartbear.com/swagger/contract-testing/docs/en/user-guide/getting-started-with.html)
+- [Pricing](https://pactflow.io/pricing)
+- [Sign up](https://pactflow.io/demo)
+- [Blog](https://pactflow.io/blog)
+- [Security](https://pactflow.io/security)
+- [Compliance](https://pactflow.io/security/)
+- [Terms of service](https://pactflow.io/terms)
+- [Privacy policy](https://pactflow.io/privacy)
+- [Status](http://status.pactflow.io/)
+
+## API Evangelist rating
+
+**Kin Score 47.7** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 32.0 |
+| Contract governance | 22.0 |
+| Operational transparency | 55.3 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 92.1 |
+
+**Agent readiness 16.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | — |
+
+**Regulatory alignment 23.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/pactflow/](https://apis.io/providers/pactflow/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for PactFlow: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/pactflow/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
